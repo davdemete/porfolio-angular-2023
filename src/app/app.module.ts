@@ -1,6 +1,7 @@
 //Módulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -20,7 +21,8 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
     PortfolioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
