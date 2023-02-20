@@ -1,6 +1,7 @@
 //Módulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { TerminosComponent } from './pages/terminos/terminos.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
     FooterComponent,
     AboutComponent,
     ItemComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TerminosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
